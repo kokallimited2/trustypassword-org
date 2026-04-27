@@ -1,5 +1,23 @@
 [
   {
+    "slug": "have-i-been-pwned-how-to-check-if-your-password-was-leaked",
+    "title": "Have I Been Pwned? How to Check if Your Password Was Leaked",
+    "excerpt": "Data breaches happen every day. Find out if your email and passwords have been compromised — and what to do about it.",
+    "date": "2026-04-27",
+    "category": "Data Breach",
+    "readTime": "4 min read",
+    "keywords": "have i been pwned, data breach check, password leaked, email breach, compromised passwords"
+  },
+  {
+    "slug": "two-factor-authentication-the-extra-lock-on-your-digital-life",
+    "title": "Two-Factor Authentication: The Extra Lock on Your Digital Life",
+    "excerpt": "A strong password alone isn't enough. Two-factor authentication adds a critical second layer of security to your accounts.",
+    "date": "2026-04-27",
+    "category": "Security Tips",
+    "readTime": "5 min read",
+    "keywords": "two factor authentication, 2FA, authenticator app, account security, Google Authenticator"
+  },
+  {
     "slug": "why-strong-passwords-are-your-first-line-of-defence",
     "title": "Why Strong Passwords Are Your First Line of Defence",
     "excerpt": "Most data breaches happen because of weak or reused passwords. Here's how to protect yourself today.",

@@ -15,5 +15,18 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  
+  <url>
+    <loc>https://trustypassword.org/blog/posts/have-i-been-pwned-how-to-check-if-your-password-was-leaked.html</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://trustypassword.org/blog/posts/two-factor-authentication-the-extra-lock-on-your-digital-life.html</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
   <!-- Blog posts appended automatically by publisher -->
 </urlset>
