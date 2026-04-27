@@ -1,0 +1,28 @@
+{
+  "id": "trustypassword-org",
+  "name": "TrustyPassword",
+  "domain": "trustypassword.org",
+  "url": "https://trustypassword.org",
+  "emoji": "🛡️",
+  "brand": "TrustyPassword",
+  "angle": "Community/non-profit feel. Password safety guides, breach news, free resources.",
+  "primaryColor": "green",
+  "description": "Free password safety resources, guides and tools. Helping everyone stay safe online.",
+  "shortDescription": "Password Safety Resources",
+  "topic": "password safety, cybersecurity guides, online privacy",
+  "tags": [
+    "safety",
+    "community",
+    "guides",
+    "privacy",
+    "passwords"
+  ],
+  "active": true,
+  "repo": "kokallimited2/trustypassword-org",
+  "deployDay": 3,
+  "deploySlot": "12:00",
+  "posts": [],
+  "defaultKeywords": "password safety, cybersecurity guides, online privacy",
+  "blogDescription": "Guides, tips and news about password safety, cybersecurity guides, online privacy.",
+  "generatedAt": "2026-04-26"
+}

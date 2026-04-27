@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blog — Password Safety Resources | TrustyPassword</title>
+  <meta name="description" content="TrustyPassword blog — tips, guides and news about password safety, cybersecurity guides, online privacy."/>
+  <meta name="robots" content="index, follow"/>
+  <link rel="canonical" href="https://trustypassword.org/blog/"/>
+  <meta property="og:type" content="website"/><meta property="og:site_name" content="TrustyPassword"/>
+  <meta property="og:title" content="Blog | TrustyPassword"/><meta property="og:url" content="https://trustypassword.org/blog/"/>
+  <link rel="sitemap" type="application/xml" href="/sitemap.xml"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>body{font-family:'Segoe UI',sans-serif;}</style>
+</head>
+<body class="bg-gray-950 text-gray-100 min-h-screen">
+<header class="bg-gray-900 border-b border-gray-800 py-4 px-6">
+  <div class="max-w-4xl mx-auto flex items-center justify-between">
+    <a href="/" class="flex items-center gap-2"><span class="text-2xl">🛡️</span><span class="text-xl font-bold text-green-400">TrustyPassword</span></a>
+    <nav class="flex gap-6 text-sm text-gray-400"><a href="/" class="hover:text-white">Home</a><a href="/blog/" class="text-white font-semibold">Blog</a></nav>
+  </div>
+</header>
+<div class="max-w-4xl mx-auto px-4 mt-4"><div class="bg-gray-800 border border-gray-700 rounded-lg h-24 flex items-center justify-center text-gray-500 text-sm">Advertisement</div></div>
+<section class="max-w-4xl mx-auto px-4 py-10">
+  <h1 class="text-4xl font-extrabold mb-2">📰 TrustyPassword Blog</h1>
+  <p class="text-gray-400">Guides, tips and news about password safety, cybersecurity guides, online privacy.</p>
+</section>
+<section class="max-w-4xl mx-auto px-4 pb-16">
+  <div id="postsGrid" class="grid md:grid-cols-2 gap-6"><div class="text-gray-500 text-sm">Loading posts...</div></div>
+</section>
+<footer class="bg-gray-900 border-t border-gray-800 py-6 px-4 text-center text-gray-500 text-sm"><p>© 2026 TrustyPassword · <a href="/privacy.html" class="hover:text-white">Privacy</a> · <a href="/terms.html" class="hover:text-white">Terms</a> · <a href="/cookie-policy.html" class="hover:text-white">Cookies</a></p></footer>
+
+<!-- GDPR Cookie Consent Banner -->
+<div id="cookieBanner" class="fixed bottom-0 left-0 right-0 z-50 bg-gray-900 border-t border-gray-700 px-4 py-4 shadow-2xl hidden">
+  <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-start md:items-center gap-4">
+    <div class="flex-1 text-sm text-gray-300">
+      <span class="text-white font-semibold">🍪 We use cookies</span> — to serve adverts and analyse traffic. See our
+      <a href="/cookie-policy.html" class="text-green-400 underline hover:text-white">Cookie Policy</a> and
+      <a href="/privacy.html" class="text-green-400 underline hover:text-white">Privacy Policy</a>.
+    </div>
+    <div class="flex flex-wrap gap-2 shrink-0">
+      <button onclick="cookieChoice('essential')" class="bg-gray-700 hover:bg-gray-600 text-white text-xs font-semibold px-4 py-2 rounded-lg transition">Essential Only</button>
+      <button onclick="cookieChoice('all')" class="bg-green-600 hover:bg-green-500 text-white text-xs font-semibold px-4 py-2 rounded-lg transition">Accept All</button>
+    </div>
+  </div>
+</div>
+<script>
+(function(){
+  var consent=localStorage.getItem('cookieConsent');
+  if(!consent){document.getElementById('cookieBanner').classList.remove('hidden');}
+  else if(consent==='all'){loadAnalytics();loadAds();}
+})();
+function cookieChoice(t){localStorage.setItem('cookieConsent',t);document.getElementById('cookieBanner').classList.add('hidden');if(t==='all'){loadAnalytics();loadAds();}}
+function loadAnalytics(){if(window._gaLoaded)return;window._gaLoaded=true;var s=document.createElement('script');s.src='https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX';s.async=true;document.head.appendChild(s);window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XXXXXXXXXX',{anonymize_ip:true});}
+function loadAds(){if(window._adsLoaded)return;window._adsLoaded=true;var s=document.createElement('script');s.src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXXX';s.async=true;s.crossOrigin='anonymous';document.head.appendChild(s);}
+document.addEventListener('DOMContentLoaded',function(){var bi=document.getElementById('breachInput');if(bi)bi.addEventListener('keydown',function(e){if(e.key==='Enter')checkBreach();});});
+</script>
+<script>
+fetch('/blog/posts.json').then(r=>r.json()).then(posts=>{
+  const g=document.getElementById('postsGrid');
+  if(!posts.length){g.innerHTML='<p class="text-gray-500">No posts yet — check back soon.</p>';return;}
+  const ca=c.accent,cb=c.bg,ct=c.text;
+  g.innerHTML=posts.map(p=>'<a href="/blog/posts/'+p.slug+'.html" class="block bg-gray-900 border border-gray-700 rounded-xl p-6 transition group"><div class="flex gap-2 mb-3"><span class="text-xs font-semibold px-2 py-1 rounded">'+p.category+'</span><span class="text-gray-500 text-xs py-1">'+p.readTime+'</span></div><h2 class="text-lg font-bold mb-2 transition">'+p.title+'</h2><p class="text-gray-400 text-sm mb-4">'+p.excerpt+'</p><div class="flex items-center justify-between"><span class="text-gray-600 text-xs">'+p.date+'</span><span class="text-sm font-semibold">Read more →</span></div></a>').join('');
+}).catch(()=>{document.getElementById('postsGrid').innerHTML='<p class="text-gray-500">Failed to load posts.</p>';});
+</script>
+</body></html>

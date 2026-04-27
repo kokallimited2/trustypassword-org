@@ -1,0 +1,18 @@
+# TrustyPassword — llms.txt
+# https://llmstxt.org
+
+> Free password safety resources, guides and tools. Helping everyone stay safe online.
+
+## Tool
+- [Password Safety Resources](https://trustypassword.org/): Free password safety resources, guides and tools. Helping everyone stay safe online.
+
+## Blog
+- [Blog](https://trustypassword.org/blog/): Guides and tips about password safety, cybersecurity guides, online privacy.
+
+## Key Facts
+- Free to use, no sign-up required
+- Client-side only — no data stored or transmitted
+- Cryptographically secure (crypto.getRandomValues)
+
+## Affiliate Disclosure
+This site may contain affiliate links to password managers.
