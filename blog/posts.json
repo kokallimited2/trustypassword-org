@@ -1,1 +1,20 @@
-[]
+[
+  {
+    "slug": "why-strong-passwords-are-your-first-line-of-defence",
+    "title": "Why Strong Passwords Are Your First Line of Defence",
+    "excerpt": "Most data breaches happen because of weak or reused passwords. Here's how to protect yourself today.",
+    "date": "2026-04-27",
+    "category": "Security Tips",
+    "readTime": "4 min read",
+    "keywords": "strong passwords, password security, data breach protection, online security"
+  },
+  {
+    "slug": "password-manager-vs-browser-password-saving-which-is-safer",
+    "title": "Password Manager vs Browser Password Saving: Which Is Safer?",
+    "excerpt": "Browsers offer to save your passwords — but is that actually safe? We compare browser storage vs dedicated password managers.",
+    "date": "2026-04-27",
+    "category": "Password Managers",
+    "readTime": "5 min read",
+    "keywords": "password manager, browser password, Chrome passwords, LastPass, 1Password, NordPass"
+  }
+]
