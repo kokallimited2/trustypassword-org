@@ -3,7 +3,7 @@
   "name": "TrustyPassword",
   "domain": "trustypassword.org",
   "url": "https://trustypassword.org",
-  "emoji": "🛡️",
+  "emoji": "\ud83d\udee1\ufe0f",
   "brand": "TrustyPassword",
   "angle": "Community/non-profit feel. Password safety guides, breach news, free resources.",
   "primaryColor": "green",
@@ -24,5 +24,6 @@
   "posts": [],
   "defaultKeywords": "password safety, cybersecurity guides, online privacy",
   "blogDescription": "Guides, tips and news about password safety, cybersecurity guides, online privacy.",
-  "generatedAt": "2026-04-26"
+  "generatedAt": "2026-04-26",
+  "siteName": "TrustyPassword"
 }

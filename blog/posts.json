@@ -1,5 +1,23 @@
 [
   {
+    "slug": "passkeys-the-technology-that-will-replace-passwords",
+    "title": "Passkeys: The Technology That Will Replace Passwords",
+    "excerpt": "Tech giants are ditching passwords entirely. Here's how passkeys work and why they're the future of online security.",
+    "date": "2026-04-28",
+    "category": "Future of Security",
+    "readTime": "5 min read",
+    "keywords": "passkeys, passwordless login, FIDO2, WebAuthn, Apple passkey, Google passkey"
+  },
+  {
+    "slug": "the-top-10-most-common-passwords-and-why-you-must-avoid-them",
+    "title": "The Top 10 Most Common Passwords — And Why You Must Avoid Them",
+    "excerpt": "Millions of people still use shockingly weak passwords. See the worst offenders and learn what a truly secure password looks like.",
+    "date": "2026-04-28",
+    "category": "Security Tips",
+    "readTime": "4 min read",
+    "keywords": "most common passwords, worst passwords, password123, weak passwords, password list"
+  },
+  {
     "slug": "have-i-been-pwned-how-to-check-if-your-password-was-leaked",
     "title": "Have I Been Pwned? How to Check if Your Password Was Leaked",
     "excerpt": "Data breaches happen every day. Find out if your email and passwords have been compromised — and what to do about it.",
