@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded',function(){var bi=document.getEleme
 fetch('/blog/posts.json').then(r=>r.json()).then(posts=>{
   const g=document.getElementById('postsGrid');
   if(!posts.length){g.innerHTML='<p class="text-gray-500">No posts yet — check back soon.</p>';return;}
-  const ca=c.accent,cb=c.bg,ct=c.text;
+
   g.innerHTML=posts.map(p=>'<a href="/blog/posts/'+p.slug+'.html" class="block bg-gray-900 border border-gray-700 rounded-xl p-6 transition group"><div class="flex gap-2 mb-3"><span class="text-xs font-semibold px-2 py-1 rounded">'+p.category+'</span><span class="text-gray-500 text-xs py-1">'+p.readTime+'</span></div><h2 class="text-lg font-bold mb-2 transition">'+p.title+'</h2><p class="text-gray-400 text-sm mb-4">'+p.excerpt+'</p><div class="flex items-center justify-between"><span class="text-gray-600 text-xs">'+p.date+'</span><span class="text-sm font-semibold">Read more →</span></div></a>').join('');
 }).catch(()=>{document.getElementById('postsGrid').innerHTML='<p class="text-gray-500">Failed to load posts.</p>';});
 </script>
