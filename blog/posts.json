@@ -1,5 +1,23 @@
 [
   {
+    "slug": "how-long-would-it-take-to-crack-your-password",
+    "title": "How Long Would It Take to Crack Your Password?",
+    "excerpt": "Password cracking speeds have increased dramatically with modern GPUs. Find out how your current passwords measure up.",
+    "date": "2026-04-29",
+    "category": "Password Strength",
+    "readTime": "5 min read",
+    "keywords": "password cracking time, brute force attack, password strength, GPU cracking, secure password length"
+  },
+  {
+    "slug": "securing-your-small-business-password-policies-that-actually-work",
+    "title": "Securing Your Small Business: Password Policies That Actually Work",
+    "excerpt": "Password breaches cost UK businesses millions each year. Here's a practical framework for protecting your team and your data.",
+    "date": "2026-04-29",
+    "category": "Business Security",
+    "readTime": "6 min read",
+    "keywords": "business password policy, company password security, team passwords, SME cybersecurity, password management business"
+  },
+  {
     "slug": "passkeys-the-technology-that-will-replace-passwords",
     "title": "Passkeys: The Technology That Will Replace Passwords",
     "excerpt": "Tech giants are ditching passwords entirely. Here's how passkeys work and why they're the future of online security.",

@@ -41,5 +41,18 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  
+  <url>
+    <loc>https://trustypassword.org/blog/posts/how-long-would-it-take-to-crack-your-password.html</loc>
+    <lastmod>2026-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://trustypassword.org/blog/posts/securing-your-small-business-password-policies-that-actually-work.html</loc>
+    <lastmod>2026-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
   <!-- Blog posts appended automatically by publisher -->
 </urlset>
