@@ -1,5 +1,23 @@
 [
   {
+    "slug": "security-keys-explained-yubikey-and-fido2-hardware-tokens",
+    "title": "Security Keys Explained: YubiKey and FIDO2 Hardware Tokens",
+    "excerpt": "Hardware security keys are the strongest form of two-factor authentication available. Here's everything you need to know.",
+    "date": "2026-04-29",
+    "category": "Security Tips",
+    "readTime": "6 min read",
+    "keywords": "YubiKey, security key, FIDO2, hardware token, 2FA hardware, physical security key"
+  },
+  {
+    "slug": "how-to-recover-a-hacked-account-a-step-by-step-guide",
+    "title": "How to Recover a Hacked Account: A Step-by-Step Guide",
+    "excerpt": "Discovering you've been hacked is stressful. Here's exactly what to do in the first 24 hours to limit the damage.",
+    "date": "2026-04-29",
+    "category": "Guides",
+    "readTime": "6 min read",
+    "keywords": "recover hacked account, account compromise, what to do if hacked, account recovery steps, hacked email"
+  },
+  {
     "slug": "how-long-would-it-take-to-crack-your-password",
     "title": "How Long Would It Take to Crack Your Password?",
     "excerpt": "Password cracking speeds have increased dramatically with modern GPUs. Find out how your current passwords measure up.",
