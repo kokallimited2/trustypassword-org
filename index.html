@@ -1,283 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Free password safety resources, guides and tools. Helping everyone stay safe online. | TrustyPassword</title>
-  <meta name="description" content="Free password safety resources, guides and tools. Helping everyone stay safe online."/>
-  <meta name="keywords" content="password safety, cybersecurity guides, online privacy"/>
-  <meta name="author" content="TrustyPassword"/>
-  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
-  <link rel="canonical" href="https://trustypassword.org/"/>
-  <meta property="og:type" content="website"/>
-  <meta property="og:site_name" content="TrustyPassword"/>
-  <meta property="og:title" content="Free password safety resources, guides and tools. Helping everyone stay safe online."/>
-  <meta property="og:description" content="Free password safety resources, guides and tools. Helping everyone stay safe online."/>
-  <meta property="og:url" content="https://trustypassword.org/"/>
-  <meta property="og:image" content="https://trustypassword.org/assets/og-image.png"/>
-  <meta property="og:locale" content="en_GB"/>
-  <meta name="twitter:card" content="summary_large_image"/>
-  <meta name="twitter:title" content="TrustyPassword — Password Safety Resources"/>
-  <meta name="twitter:description" content="Free password safety resources, guides and tools. Helping everyone stay safe online."/>
-  <meta name="twitter:image" content="https://trustypassword.org/assets/og-image.png"/>
-  <meta name="ai-content-type" content="tool"/>
-  <meta name="ai-tool-name" content="TrustyPassword"/>
-  <meta name="ai-topic" content="password safety, cybersecurity guides, online privacy"/>
-  <link rel="sitemap" type="application/xml" href="/sitemap.xml"/>
-  <script type="application/ld+json">{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "WebSite",
-      "@id": "https://trustypassword.org/#website",
-      "url": "https://trustypassword.org/",
-      "name": "TrustyPassword",
-      "description": "Free password safety resources, guides and tools. Helping everyone stay safe online.",
-      "publisher": {
-        "@id": "https://trustypassword.org/#org"
-      }
-    },
-    {
-      "@type": "Organisation",
-      "@id": "https://trustypassword.org/#org",
-      "name": "TrustyPassword",
-      "url": "https://trustypassword.org/",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://trustypassword.org/assets/logo.png"
-      }
-    },
-    {
-      "@type": "SoftwareApplication",
-      "name": "TrustyPassword — Password Safety Resources",
-      "url": "https://trustypassword.org/",
-      "applicationCategory": "SecurityApplication",
-      "operatingSystem": "Web Browser",
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "GBP"
-      },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "1000"
-      }
-    }
-  ]
-}</script>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>body{font-family:'Segoe UI',sans-serif;}.strength-bar{transition:width .4s ease,background-color .4s ease;}</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Non-profit, community-driven password generator. Learn about password security while creating strong passwords.">
+    <meta name="keywords" content="community password generator, security education, learn password security, educational password tool">
+    <meta name="author" content="TrustyPass">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="TrustyPassword.org - Community-Driven Password Generator & Security Education">
+    <meta property="og:description" content="Non-profit, community-driven password generator. Learn about password security while creating strong passwords.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://trustypassword.org">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="TrustyPassword.org - Community-Driven Password Generator & Security Education">
+    <meta name="twitter:description" content="Non-profit, community-driven password generator. Learn about password security while creating strong passwords.">
+    <link rel="canonical" href="https://trustypassword.org/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family='Lora':wght@300;400;500;600;700&family='JetBrains+Mono':wght@400;500;600&display=swap" rel="stylesheet">
+    <title>TrustyPassword.org - Community-Driven Password Generator & Security Education</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "TrustyPasswordOrg", "description": "Non-profit, community-driven password generator. Learn about password security while creating strong passwords.", "url": "https://trustypassword.org", "applicationCategory": "Utility", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "creator": {"@type": "Organization", "name": "TrustyPass"}}</script>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect fill='%231E40AF' width='100' height='100'/%3E%3Ctext x='50' y='70' font-size='60' font-weight='bold' text-anchor='middle' fill='white' font-family='Arial'%3ETP%3C/text%3E%3C/svg%3E">
 </head>
-<body class="bg-gray-950 text-gray-100 min-h-screen">
-
-<header class="bg-gray-900 border-b border-gray-800 py-4 px-6">
-  <div class="max-w-5xl mx-auto flex items-center justify-between">
-    <a href="/" class="flex items-center gap-2">
-      <span class="text-2xl">🛡️</span>
-      <span class="text-xl font-bold text-green-400">TrustyPassword</span>
-    </a>
-    <nav class="hidden md:flex gap-5 text-sm text-gray-400">
-      <a href="#generator" class="hover:text-white">Generator</a>
-      <a href="#breach-checker" class="hover:text-white">Breach Check</a>
-      <a href="#tips" class="hover:text-white">Security Tips</a>
-      <a href="#faq" class="hover:text-white">FAQ</a>
-      <a href="/blog/" class="hover:text-white">Blog</a>
+<body>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="nav-brand">
+                <span class="nav-logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="64" height="64">
+  <defs>
+    <linearGradient id="lg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1E40AF;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#1E40AFcc;stop-opacity:1"/>
+    </linearGradient>
+    <filter id="s">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+  <circle cx="100" cy="100" r="95" fill="url(#lg)" filter="url(#s)"/>
+  <rect x="60" y="80" width="80" height="60" rx="10" fill="white" opacity="0.95"/>
+  <path d="M 65 80 Q 65 45 100 45 Q 135 45 135 80" fill="none" stroke="white" stroke-width="9" stroke-linecap="round" opacity="0.95"/>
+  <circle cx="100" cy="110" r="10" fill="#1E40AF" opacity="0.8"/>
+  <rect x="97" y="120" width="6" height="18" rx="3" fill="#1E40AF" opacity="0.8"/>
+</svg></span>
+                <span class="nav-name">TrustyPass</span>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="#generator">Generator</a>
+                <a href="#blog">Learn</a>
+                <a href="#faq">FAQ</a>
+                <a href="#affiliates">Tools</a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Menu">☰</button>
+        </div>
     </nav>
-  </div>
-</header>
 
-<div class="max-w-4xl mx-auto px-4 my-6">
-    <div class="bg-gray-800 border border-gray-700 rounded-lg h-24 flex items-center justify-center text-gray-500 text-sm"><!-- AdSense code goes here --></div>
-  </div>
+    <section class="hero hero-edu">
+        <div class="container hero-content">
+            <div class="hero-badge">📚 TrustyPass</div>
+            <h1>TrustyPasswordOrg</h1>
+            <p class="hero-subtitle">Community-Driven Password Security</p>
+            <p class="hero-description">Non-profit, community-driven password generator. Learn about password security while creating strong passwords.</p>
+        </div>
+    </section>
 
-<section class="max-w-4xl mx-auto px-4 py-10 text-center">
-  <h1 class="text-4xl md:text-5xl font-extrabold mb-4">🛡️ <span class="text-green-400">TrustyPassword</span></h1>
-  <p class="text-gray-400 text-lg max-w-2xl mx-auto">Free password safety resources, guides and tools. Helping everyone stay safe online.</p>
-</section>
+    <section id="generator" class="tool-section">
+        <div class="container">
+            <div class="tool-grid">
+                <div class="generator-card">
+                    <h2>Password Generator</h2>
+                    <p class="card-description">Create a strong, random password instantly</p>
+                    <div class="password-display">
+                        <input type="text" id="password-display" class="password-input" readonly placeholder="Click generate...">
+                        <button id="copy-btn" class="btn btn-icon" title="Copy to clipboard">📋</button>
+                    </div>
+                    <div class="password-options">
+                        <div class="option-group"><label class="option-label">Length: <strong><span id="length-display">16</span></strong></label><input type="range" id="length-slider" min="4" max="128" value="16" class="slider"></div>
+                        <div class="checkbox-group">
+                            <label class="checkbox-label"><input type="checkbox" id="include-uppercase" checked><span>Uppercase (A-Z)</span></label>
+                            <label class="checkbox-label"><input type="checkbox" id="include-lowercase" checked><span>Lowercase (a-z)</span></label>
+                            <label class="checkbox-label"><input type="checkbox" id="include-numbers" checked><span>Numbers (0-9)</span></label>
+                            <label class="checkbox-label"><input type="checkbox" id="include-symbols" checked><span>Symbols (!@#$%...)</span></label>
+                            <label class="checkbox-label"><input type="checkbox" id="exclude-ambiguous"><span>Exclude Ambiguous</span></label>
+                        </div>
+                        <button id="generate-btn" class="btn btn-primary btn-large">Generate Password</button>
+                    </div>
+                </div>
+                <div class="checker-card">
+                    <h2>Strength Checker</h2>
+                    <p class="card-description">Check password strength in real time</p>
+                    <div class="check-input-group">
+                        <input type="password" id="strength-check-input" class="check-input" placeholder="Type password...">
+                        <button id="toggle-visibility" class="btn btn-icon">👁️</button>
+                    </div>
+                    <div id="strength-report" class="strength-report">
+                        <div class="report-item"><span class="report-label">Length:</span><span id="report-length" class="report-value">0 chars</span></div>
+                        <div class="report-item"><span class="report-label">Variety:</span><span id="report-variety" class="report-value">None</span></div>
+                        <div class="report-item"><span class="report-label">Patterns:</span><span id="report-patterns" class="report-value">None</span></div>
+                        <div class="report-item"><span class="report-label">Crack Time:</span><span id="report-time" class="report-value">Instantly</span></div>
+                        <div class="report-item"><span class="report-label">Strength:</span><span id="report-strength" class="report-value strength-very-weak">Very Weak</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<section id="generator" class="max-w-2xl mx-auto px-4 pb-10">
-  <div class="bg-gray-900 rounded-2xl border border-gray-700 p-6 shadow-2xl">
-    <h2 class="text-lg font-bold mb-4 text-green-400">🔐 Password Generator</h2>
-    <div class="relative mb-4">
-      <div id="passwordDisplay" class="bg-gray-800 border border-gray-600 rounded-xl px-5 py-4 text-xl font-mono text-green-400 tracking-widest break-all min-h-[64px] flex items-center pr-16">Click Generate</div>
-      <button onclick="copyPassword()" class="absolute right-3 top-1/2 -translate-y-1/2 bg-green-600 hover:bg-green-500 text-white text-xs font-bold px-3 py-2 rounded-lg transition">COPY</button>
-    </div>
-    <div class="mb-4">
-      <div class="flex justify-between text-xs text-gray-400 mb-1"><span>Strength</span><span id="strengthLabel" class="font-semibold">—</span></div>
-      <div class="w-full bg-gray-700 rounded-full h-2"><div id="strengthBar" class="strength-bar h-2 rounded-full w-0"></div></div>
-    </div>
-    <div class="mb-4">
-      <div class="flex justify-between mb-1"><label class="text-sm text-gray-300">Length</label><span id="lengthValue" class="text-green-400 font-bold">16</span></div>
-      <input type="range" id="lengthSlider" min="6" max="64" value="16" oninput="document.getElementById('lengthValue').textContent=this.value;generatePassword()" class="w-full h-2 bg-gray-700 rounded-lg appearance-none cursor-pointer accent-green-600"/>
-    </div>
-    <div class="grid grid-cols-2 gap-3 mb-5">
-      <label class="flex items-center gap-3 bg-gray-800 rounded-xl px-4 py-3 cursor-pointer hover:bg-gray-700"><input type="checkbox" id="optUpper" checked class="accent-green-600 w-4 h-4" onchange="generatePassword()"/><span class="text-sm">Uppercase (A-Z)</span></label>
-      <label class="flex items-center gap-3 bg-gray-800 rounded-xl px-4 py-3 cursor-pointer hover:bg-gray-700"><input type="checkbox" id="optLower" checked class="accent-green-600 w-4 h-4" onchange="generatePassword()"/><span class="text-sm">Lowercase (a-z)</span></label>
-      <label class="flex items-center gap-3 bg-gray-800 rounded-xl px-4 py-3 cursor-pointer hover:bg-gray-700"><input type="checkbox" id="optNumbers" checked class="accent-green-600 w-4 h-4" onchange="generatePassword()"/><span class="text-sm">Numbers (0-9)</span></label>
-      <label class="flex items-center gap-3 bg-gray-800 rounded-xl px-4 py-3 cursor-pointer hover:bg-gray-700"><input type="checkbox" id="optSymbols" checked class="accent-green-600 w-4 h-4" onchange="generatePassword()"/><span class="text-sm">Symbols (!@#$)</span></label>
-      <label class="flex items-center gap-3 bg-gray-800 rounded-xl px-4 py-3 cursor-pointer hover:bg-gray-700"><input type="checkbox" id="optExcludeSimilar" class="accent-green-600 w-4 h-4" onchange="generatePassword()"/><span class="text-sm">Exclude Similar</span></label>
-      <label class="flex items-center gap-3 bg-gray-800 rounded-xl px-4 py-3 cursor-pointer hover:bg-gray-700"><input type="checkbox" id="optNoRepeat" class="accent-green-600 w-4 h-4" onchange="generatePassword()"/><span class="text-sm">No Repeats</span></label>
-    </div>
-    <button onclick="generatePassword()" class="w-full bg-green-600 hover:bg-green-500 text-white font-bold text-lg py-4 rounded-xl transition shadow-lg shadow-green-900">🔄 Generate Password</button>
-    <div id="copyNotif" class="hidden mt-3 text-center text-green-400 text-sm font-semibold">✅ Copied to clipboard!</div>
-  </div>
+    <section id="affiliates" class="affiliate-section">
+        <div class="container">
+            <div class="affiliate-banner">
+                <h2>Secure Your Other Accounts</h2>
+                <p>Use a password manager to store all generated passwords safely:</p>
+                <div class="affiliate-grid">
+                    <a href="https://affiliate.1password.com/click?link=trustypassword-org" class="affiliate-card"><div class="affiliate-icon">🔐</div><h3>1Password</h3><p>Best password manager</p><span class="cta-text">Get 1Password →</span></a>
+                    <a href="https://affiliate.dashlane.com/click?link=trustypassword-org" class="affiliate-card"><div class="affiliate-icon">🛡️</div><h3>Dashlane</h3><p>Identity protection</p><span class="cta-text">Get Dashlane →</span></a>
+                    <a href="https://affiliate.bitwarden.com/click?link=trustypassword-org" class="affiliate-card"><div class="affiliate-icon">🔑</div><h3>Bitwarden</h3><p>Open source manager</p><span class="cta-text">Get Bitwarden →</span></a>
+                    <a href="https://affiliate.lastpass.com/click?link=trustypassword-org" class="affiliate-card"><div class="affiliate-icon">🗝️</div><h3>LastPass</h3><p>Cloud management</p><span class="cta-text">Get LastPass →</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <div class="bg-gray-900 rounded-2xl border border-gray-700 p-6 shadow-xl mt-6">
-    <h2 class="text-lg font-bold mb-4 text-green-400">📋 Bulk Generator</h2>
-    <div class="flex gap-3 mb-4">
-      <select id="bulkCount" class="bg-gray-800 border border-gray-600 rounded-lg px-3 py-2 text-sm flex-1">
-        <option value="5">5 passwords</option><option value="10" selected>10 passwords</option><option value="20">20 passwords</option><option value="50">50 passwords</option>
-      </select>
-      <button onclick="generateBulk()" class="bg-green-600 hover:bg-green-500 text-white font-bold px-5 py-2 rounded-lg text-sm">Generate</button>
-    </div>
-    <div id="bulkOutput" class="bg-gray-800 rounded-xl p-4 font-mono text-sm text-green-400 space-y-1 hidden max-h-64 overflow-y-auto"></div>
-  </div>
-</section>
+    <section id="blog" class="blog-section">
+        <div class="container">
+            <div class="blog-article">
+                <div class="blog-meta"><span class="blog-date">Updated May 2025</span><span class="blog-category">Security Guide</span></div>
+                <h2>Password Security Through the Decades: From 1234 to Biometrics</h2>
+<p>The history of password security is a fascinating journey from simple pins to sophisticated biometric systems. Understanding this evolution helps us appreciate where we are today and where we're heading.</p>
+<h3>The 1960s-1970s: Birth of the Password</h3>
+<p>The first computer password was created at MIT in 1961 for the Compatible Time-Sharing System (CTSS). Users needed passwords to access shared computing resources. The first known password breach occurred in 1962 when a researcher printed all passwords to extend his computing time.</p>
+<h3>The 1980s-1990s: Password Proliferation</h3>
+<p>As personal computers and the internet grew, so did passwords. By 1995, the average person had 5 passwords. Security recommendations focused on complexity—mix letters, numbers, and symbols.</p>
+<h3>The 2000s-2010s: The Breach Era</h3>
+<p>Massive data breaches exposed billions of passwords. The 2013 Adobe breach (150 million records) and 2014 Yahoo breach (3 billion records) showed how vulnerable centralized password storage can be. Two-factor authentication became mainstream.</p>
+<h3>The 2020s and Beyond</h3>
+<p>We're entering the passwordless era with passkeys, biometrics, and hardware security keys. But passwords remain relevant for billions of legacy systems. The lesson: password security is always evolving.</p>
+            </div>
+        </div>
+    </section>
 
-<div class="max-w-4xl mx-auto px-4 my-6">
-    <div class="bg-gray-800 border border-gray-700 rounded-lg h-24 flex items-center justify-center text-gray-500 text-sm"><!-- AdSense code goes here --></div>
-  </div>
+    <section id="faq" class="faq-section">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <details class="faq-item"><summary>Is this password generator secure?</summary><p>Yes. All processing happens in your browser locally—we never send or store passwords.</p></details>
+                <details class="faq-item"><summary>How long should my password be?</summary><p>12-16 characters for most accounts. 20+ for critical accounts. Every extra character helps!</p></details>
+                <details class="faq-item"><summary>Can I see my password history?</summary><p>We don't store any passwords. Generate and save them in a password manager.</p></details>
+                <details class="faq-item"><summary>Does it work offline?</summary><p>Yes! Once the page loads, everything works offline—no internet needed.</p></details>
+                <details class="faq-item"><summary>What does "exclude ambiguous" mean?</summary><p>Removes similar-looking characters (like l/1, O/0) to prevent copying mistakes.</p></details>
+                <details class="faq-item"><summary>Should I use symbols?</summary><p>Yes—including all character types maximizes password strength.</p></details>
+            </div>
+        </div>
+    </section>
 
-<section id="breach-checker" class="max-w-2xl mx-auto px-4 pb-10">
-  <div class="bg-gray-900 rounded-2xl border border-gray-700 p-6 shadow-xl">
-    <h2 class="text-xl font-bold mb-1 text-green-400">🔍 Password Breach Checker</h2>
-    <p class="text-gray-400 text-sm mb-5">Check if your password appeared in a data breach. Uses k-anonymity — your password is <strong class="text-white">never sent</strong> anywhere.</p>
-    <div class="relative mb-3">
-      <input type="password" id="breachInput" placeholder="Enter a password to check..." class="w-full bg-gray-800 border border-gray-600 rounded-xl px-5 py-4 text-base text-white placeholder-gray-500 pr-28 focus:outline-none focus:border-green-600"/>
-      <button onclick="toggleBreachVisibility()" id="breachToggleBtn" class="absolute right-20 top-1/2 -translate-y-1/2 text-gray-400 hover:text-white text-xs px-2 py-1">SHOW</button>
-      <button onclick="checkBreach()" id="breachBtn" class="absolute right-3 top-1/2 -translate-y-1/2 bg-green-600 hover:bg-green-500 text-white text-xs font-bold px-3 py-2 rounded-lg">CHECK</button>
-    </div>
-    <button onclick="useGeneratedPassword()" class="text-xs text-green-400 hover:text-white mb-4 block">↑ Use my generated password</button>
-    <div id="breachResult" class="hidden rounded-xl p-4 text-sm font-medium"></div>
-    <div id="breachLoading" class="hidden text-gray-400 text-sm">⏳ Checking...</div>
-    <p class="text-gray-600 text-xs mt-3">⚙️ Only the first 5 chars of a SHA-1 hash are sent — your password never leaves your device.</p>
-  </div>
-</section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="64" height="64">
+  <defs>
+    <linearGradient id="lg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1E40AF;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#1E40AFcc;stop-opacity:1"/>
+    </linearGradient>
+    <filter id="s">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+  <circle cx="100" cy="100" r="95" fill="url(#lg)" filter="url(#s)"/>
+  <rect x="60" y="80" width="80" height="60" rx="10" fill="white" opacity="0.95"/>
+  <path d="M 65 80 Q 65 45 100 45 Q 135 45 135 80" fill="none" stroke="white" stroke-width="9" stroke-linecap="round" opacity="0.95"/>
+  <circle cx="100" cy="110" r="10" fill="#1E40AF" opacity="0.8"/>
+  <rect x="97" y="120" width="6" height="18" rx="3" fill="#1E40AF" opacity="0.8"/>
+</svg></div>
+                    <p class="footer-desc">Non-profit, community-driven password generator. Learn about password security while creating strong passwords.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <a href="#generator">Generator</a>
+                    <a href="#strength-checker">Checker</a>
+                    <a href="#blog">Learn</a>
+                    <a href="#faq">FAQ</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Password Tools</h4>
+                    <a href="#generator">Generate</a>
+                    <a href="#checker">Check Strength</a>
+                </div>
+            </div>
+            <div class="footer-bottom"><p>© 2025 TrustyPassword.org. Educating for a safer web.</p></div>
+        </div>
+    </footer>
 
-<div class="max-w-4xl mx-auto px-4 my-6">
-    <div class="bg-gray-800 border border-gray-700 rounded-lg h-24 flex items-center justify-center text-gray-500 text-sm"><!-- AdSense code goes here --></div>
-  </div>
-
-<section id="tips" class="max-w-4xl mx-auto px-4 py-10">
-  <h2 class="text-3xl font-bold mb-8 text-center">🛡️ Password Security Tips</h2>
-  <div class="grid md:grid-cols-3 gap-6">
-    <div class="bg-gray-900 border border-gray-700 rounded-xl p-5"><div class="text-3xl mb-3">🔑</div><h3 class="font-bold mb-2">Unique Per Site</h3><p class="text-gray-400 text-sm">Never reuse passwords. One breach exposes all your accounts.</p></div>
-    <div class="bg-gray-900 border border-gray-700 rounded-xl p-5"><div class="text-3xl mb-3">📏</div><h3 class="font-bold mb-2">Longer = Stronger</h3><p class="text-gray-400 text-sm">16+ characters is the minimum for serious security. Go longer for critical accounts.</p></div>
-    <div class="bg-gray-900 border border-gray-700 rounded-xl p-5"><div class="text-3xl mb-3">🧠</div><h3 class="font-bold mb-2">Use a Password Manager</h3><p class="text-gray-400 text-sm">Remember one master password. Let a manager handle the rest securely.</p></div>
-    <div class="bg-gray-900 border border-gray-700 rounded-xl p-5"><div class="text-3xl mb-3">📱</div><h3 class="font-bold mb-2">Enable 2FA</h3><p class="text-gray-400 text-sm">Two-factor authentication blocks 99% of attacks even if your password leaks.</p></div>
-    <div class="bg-gray-900 border border-gray-700 rounded-xl p-5"><div class="text-3xl mb-3">🚫</div><h3 class="font-bold mb-2">Avoid Personal Info</h3><p class="text-gray-400 text-sm">No birthdays, names or pet names. These are the first things hackers try.</p></div>
-    <div class="bg-gray-900 border border-gray-700 rounded-xl p-5"><div class="text-3xl mb-3">🔍</div><h3 class="font-bold mb-2">Check for Breaches</h3><p class="text-gray-400 text-sm">Use our breach checker regularly. Change any compromised password immediately.</p></div>
-  </div>
-</section>
-
-<section id="faq" class="max-w-4xl mx-auto px-4 py-10">
-  <h2 class="text-3xl font-bold mb-8 text-center">❓ FAQ</h2>
-  <div class="space-y-4">
-    <details class="bg-gray-900 border border-gray-700 rounded-xl p-5"><summary class="font-semibold cursor-pointer list-none flex justify-between">Is this generator secure?<span class="text-green-400">▼</span></summary><p class="text-gray-400 text-sm mt-3">Yes. We use <code>crypto.getRandomValues()</code> — your browser's cryptographic random number generator. Nothing is sent to our servers.</p></details>
-    <details class="bg-gray-900 border border-gray-700 rounded-xl p-5"><summary class="font-semibold cursor-pointer list-none flex justify-between">How long should my password be?<span class="text-green-400">▼</span></summary><p class="text-gray-400 text-sm mt-3">At least 16 characters for most accounts. Use 20+ for email, banking and anything critical.</p></details>
-    <details class="bg-gray-900 border border-gray-700 rounded-xl p-5"><summary class="font-semibold cursor-pointer list-none flex justify-between">How does the breach checker work?<span class="text-green-400">▼</span></summary><p class="text-gray-400 text-sm mt-3">We hash your password with SHA-1 in your browser, then only send the first 5 characters to HaveIBeenPwned. Your actual password never leaves your device.</p></details>
-    <details class="bg-gray-900 border border-gray-700 rounded-xl p-5"><summary class="font-semibold cursor-pointer list-none flex justify-between">Should I use a password manager?<span class="text-green-400">▼</span></summary><p class="text-gray-400 text-sm mt-3">Absolutely. It's the single best thing you can do for your online security. NordPass, 1Password and Dashlane are our top picks.</p></details>
-    <details class="bg-gray-900 border border-gray-700 rounded-xl p-5"><summary class="font-semibold cursor-pointer list-none flex justify-between">Can I use this offline?<span class="text-green-400">▼</span></summary><p class="text-gray-400 text-sm mt-3">Yes — once loaded, the generator works entirely in your browser. No internet needed to generate passwords.</p></details>
-  </div>
-</section>
-
-<section class="max-w-4xl mx-auto px-4 py-10">
-  <h2 class="text-3xl font-bold mb-3 text-center">🏆 Best Password Managers 2026</h2>
-  <p class="text-center text-gray-400 mb-8 text-sm">Store every password securely — only remember one master password.</p>
-  <div class="grid md:grid-cols-3 gap-6">
-    <div class="bg-gray-900 border border-green-700 rounded-xl p-5 flex flex-col"><div class="text-2xl mb-2">🥇</div><h3 class="font-bold text-lg mb-1">NordPass</h3><div class="text-yellow-400 text-sm mb-2">★★★★★</div><p class="text-gray-400 text-sm flex-1 mb-4">Military-grade XChaCha20 encryption. Zero-knowledge. Works on all devices.</p><a href="YOUR_NORDPASS_AFFILIATE_LINK" target="_blank" rel="nofollow sponsored" class="bg-green-600 hover:bg-green-500 text-white text-center font-bold py-2 px-4 rounded-lg text-sm">Get NordPass →</a></div>
-    <div class="bg-gray-900 border border-gray-700 rounded-xl p-5 flex flex-col"><div class="text-2xl mb-2">🥈</div><h3 class="font-bold text-lg mb-1">1Password</h3><div class="text-yellow-400 text-sm mb-2">★★★★★</div><p class="text-gray-400 text-sm flex-1 mb-4">Best for families & teams. Travel Mode, Watchtower breach alerts.</p><a href="YOUR_1PASSWORD_AFFILIATE_LINK" target="_blank" rel="nofollow sponsored" class="bg-gray-700 hover:bg-gray-600 text-white text-center font-bold py-2 px-4 rounded-lg text-sm">Get 1Password →</a></div>
-    <div class="bg-gray-900 border border-gray-700 rounded-xl p-5 flex flex-col"><div class="text-2xl mb-2">🥉</div><h3 class="font-bold text-lg mb-1">Dashlane</h3><div class="text-yellow-400 text-sm mb-2">★★★★☆</div><p class="text-gray-400 text-sm flex-1 mb-4">Built-in VPN, dark web monitoring, auto password changer.</p><a href="YOUR_DASHLANE_AFFILIATE_LINK" target="_blank" rel="nofollow sponsored" class="bg-gray-700 hover:bg-gray-600 text-white text-center font-bold py-2 px-4 rounded-lg text-sm">Get Dashlane →</a></div>
-  </div>
-  <p class="text-center text-gray-600 text-xs mt-4">* Affiliate links — we may earn a commission at no extra cost to you.</p>
-</section>
-
-<div class="max-w-4xl mx-auto px-4 my-6">
-    <div class="bg-gray-800 border border-gray-700 rounded-lg h-24 flex items-center justify-center text-gray-500 text-sm"><!-- AdSense code goes here --></div>
-  </div>
-
-<footer class="bg-gray-900 border-t border-gray-800 py-8 px-4">
-  <div class="max-w-5xl mx-auto">
-    <div class="grid md:grid-cols-4 gap-6 mb-6 text-sm text-gray-400">
-      <div>
-        <div class="flex items-center gap-2 mb-3"><span class="text-xl">🛡️</span><span class="font-bold text-white">TrustyPassword</span></div>
-        <p class="text-xs">Free password safety resources, guides and tools. Helping everyone stay safe online.</p>
-      </div>
-      <div>
-        <h4 class="font-semibold text-white mb-3">Tools</h4>
-        <ul class="space-y-1">
-          <li><a href="/#generator" class="hover:text-white">Password Generator</a></li>
-          <li><a href="/#breach-checker" class="hover:text-white">Breach Checker</a></li>
-          <li><a href="/blog/" class="hover:text-white">Security Blog</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4 class="font-semibold text-white mb-3">Legal</h4>
-        <ul class="space-y-1">
-          <li><a href="/privacy.html" class="hover:text-white">Privacy Policy</a></li>
-          <li><a href="/terms.html" class="hover:text-white">Terms & Conditions</a></li>
-          <li><a href="/cookie-policy.html" class="hover:text-white">Cookie Policy</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4 class="font-semibold text-white mb-3">Our Other Tools</h4>
-        <ul class="space-y-1 text-xs">
-            <li><a href="https://securekeygenerator.com" target="_blank" rel="noopener" class="hover:text-white">🔑 SecureKeyGenerator — Password & Key Generator</a></li>
-            <li><a href="https://securekeygenerator.org" target="_blank" rel="noopener" class="hover:text-white">🔑 SecureKeyGenerator — Security Education & Tools</a></li>
-            <li><a href="https://strongpassfactory.com" target="_blank" rel="noopener" class="hover:text-white">🏭 StrongPassFactory — Bulk Password Generator</a></li>
-            <li><a href="https://titanpasswords.com" target="_blank" rel="noopener" class="hover:text-white">⚡ TitanPasswords — Enterprise Password Generator</a></li>
-            <li><a href="https://trustypassword.com" target="_blank" rel="noopener" class="hover:text-white">🛡️ TrustyPassword — Simple Password Generator</a></li>
-            <li><a href="https://bestpasswordgenerator.org" target="_blank" rel="noopener" class="hover:text-white">🏆 BestPasswordGenerator — Best Password Generator & Reviews</a></li>
-            <li><a href="https://freestrongpassword.com" target="_blank" rel="noopener" class="hover:text-white">🆓 FreeStrongPassword — Free Strong Password Generator</a></li>
-            <li><a href="https://instantpasswordgenerator.org" target="_blank" rel="noopener" class="hover:text-white">⚡ InstantPasswordGenerator — Instant Password Generator</a></li>
-            <li><a href="https://ironvaultkeys.com" target="_blank" rel="noopener" class="hover:text-white">🗝️ IronVaultKeys — Pro Password & Key Generator</a></li>
-            <li><a href="https://randompasswordtool.com" target="_blank" rel="noopener" class="hover:text-white">🎲 RandomPasswordTool — Random Password Tool</a></li>
-            <li><a href="https://safepassbuilder.com" target="_blank" rel="noopener" class="hover:text-white">🔧 SafePassBuilder — Password Builder & Generator</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="border-t border-gray-800 pt-4 text-center text-gray-600 text-xs">© 2026 TrustyPassword. All rights reserved. No data stored. No tracking.</div>
-  </div>
-</footer>
-
-
-<!-- GDPR Cookie Consent Banner -->
-<div id="cookieBanner" class="fixed bottom-0 left-0 right-0 z-50 bg-gray-900 border-t border-gray-700 px-4 py-4 shadow-2xl hidden">
-  <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-start md:items-center gap-4">
-    <div class="flex-1 text-sm text-gray-300">
-      <span class="text-white font-semibold">🍪 We use cookies</span> — to serve adverts and analyse traffic. See our
-      <a href="/cookie-policy.html" class="text-green-400 underline hover:text-white">Cookie Policy</a> and
-      <a href="/privacy.html" class="text-green-400 underline hover:text-white">Privacy Policy</a>.
-    </div>
-    <div class="flex flex-wrap gap-2 shrink-0">
-      <button onclick="cookieChoice('essential')" class="bg-gray-700 hover:bg-gray-600 text-white text-xs font-semibold px-4 py-2 rounded-lg transition">Essential Only</button>
-      <button onclick="cookieChoice('all')" class="bg-green-600 hover:bg-green-500 text-white text-xs font-semibold px-4 py-2 rounded-lg transition">Accept All</button>
-    </div>
-  </div>
-</div>
-<script>
-(function(){
-  var consent=localStorage.getItem('cookieConsent');
-  if(!consent){document.getElementById('cookieBanner').classList.remove('hidden');}
-  else if(consent==='all'){loadAnalytics();loadAds();}
-})();
-function cookieChoice(t){localStorage.setItem('cookieConsent',t);document.getElementById('cookieBanner').classList.add('hidden');if(t==='all'){loadAnalytics();loadAds();}}
-function loadAnalytics(){if(window._gaLoaded)return;window._gaLoaded=true;var s=document.createElement('script');s.src='https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX';s.async=true;document.head.appendChild(s);window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XXXXXXXXXX',{anonymize_ip:true});}
-function loadAds(){if(window._adsLoaded)return;window._adsLoaded=true;var s=document.createElement('script');s.src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXXX';s.async=true;s.crossOrigin='anonymous';document.head.appendChild(s);}
-document.addEventListener('DOMContentLoaded',function(){var bi=document.getElementById('breachInput');if(bi)bi.addEventListener('keydown',function(e){if(e.key==='Enter')checkBreach();});});
-</script>
-<script>
-    const chars={upper:'ABCDEFGHIJKLMNOPQRSTUVWXYZ',lower:'abcdefghijklmnopqrstuvwxyz',numbers:'0123456789',symbols:'!@#$%^&*()_+-=[]{}|;:,.<>?',similar:'O0Il1'};
-    function buildCharset(){let p='';if(document.getElementById('optUpper').checked)p+=chars.upper;if(document.getElementById('optLower').checked)p+=chars.lower;if(document.getElementById('optNumbers').checked)p+=chars.numbers;if(document.getElementById('optSymbols').checked)p+=chars.symbols;if(document.getElementById('optExcludeSimilar').checked)p=p.split('').filter(c=>!chars.similar.includes(c)).join('');return p||chars.lower;}
-    function generatePassword(){const len=parseInt(document.getElementById('lengthSlider').value);const noR=document.getElementById('optNoRepeat').checked;let pool=buildCharset();let pwd='';const arr=new Uint32Array(len);crypto.getRandomValues(arr);let used=new Set();for(let i=0;i<len;i++){let ch;if(noR){let ap=pool.split('').filter(c=>!used.has(c)).join('');if(!ap)ap=pool;ch=ap[arr[i]%ap.length];used.add(ch);}else{ch=pool[arr[i]%pool.length];}pwd+=ch;}document.getElementById('passwordDisplay').textContent=pwd;updateStrength(pwd);return pwd;}
-    function updateStrength(p){let s=0;if(p.length>=8)s++;if(p.length>=12)s++;if(p.length>=16)s++;if(/[A-Z]/.test(p))s++;if(/[a-z]/.test(p))s++;if(/[0-9]/.test(p))s++;if(/[^A-Za-z0-9]/.test(p))s++;const bar=document.getElementById('strengthBar');const lbl=document.getElementById('strengthLabel');if(s<=2){bar.style.width='25%';bar.style.backgroundColor='#ef4444';lbl.textContent='Weak';lbl.style.color='#ef4444';}else if(s<=4){bar.style.width='50%';bar.style.backgroundColor='#f59e0b';lbl.textContent='Fair';lbl.style.color='#f59e0b';}else if(s<=6){bar.style.width='75%';bar.style.backgroundColor='#3b82f6';lbl.textContent='Strong';lbl.style.color='#3b82f6';}else{bar.style.width='100%';bar.style.backgroundColor='#22c55e';lbl.textContent='Very Strong';lbl.style.color='#22c55e';}}
-    function copyPassword(){const p=document.getElementById('passwordDisplay').textContent;if(p==='Click Generate')return;navigator.clipboard.writeText(p).then(()=>{const n=document.getElementById('copyNotif');n.classList.remove('hidden');setTimeout(()=>n.classList.add('hidden'),2500);});}
-    function generateBulk(){const cnt=parseInt(document.getElementById('bulkCount').value);const out=document.getElementById('bulkOutput');out.innerHTML='';out.classList.remove('hidden');for(let i=0;i<cnt;i++){const p=generatePassword();const d=document.createElement('div');d.className='hover:text-white cursor-pointer transition';d.textContent=(i+1)+'. '+p;d.onclick=()=>navigator.clipboard.writeText(p);out.appendChild(d);}}
-    async function sha1(str){const buf=await crypto.subtle.digest('SHA-1',new TextEncoder().encode(str));return Array.from(new Uint8Array(buf)).map(b=>b.toString(16).padStart(2,'0')).join('').toUpperCase();}
-    function toggleBreachVisibility(){const inp=document.getElementById('breachInput');const btn=document.getElementById('breachToggleBtn');if(inp.type==='password'){inp.type='text';btn.textContent='HIDE';}else{inp.type='password';btn.textContent='SHOW';}}
-    function useGeneratedPassword(){const p=document.getElementById('passwordDisplay').textContent;if(p&&p!=='Click Generate'){document.getElementById('breachInput').value=p;document.getElementById('breachInput').type='text';document.getElementById('breachToggleBtn').textContent='HIDE';}}
-    async function checkBreach(){const pwd=document.getElementById('breachInput').value.trim();const res=document.getElementById('breachResult');const load=document.getElementById('breachLoading');const btn=document.getElementById('breachBtn');if(!pwd){res.className='rounded-xl p-4 text-sm font-medium bg-yellow-900 border border-yellow-700 text-yellow-300';res.textContent='⚠️ Please enter a password to check.';res.classList.remove('hidden');return;}res.classList.add('hidden');load.classList.remove('hidden');btn.disabled=true;try{const hash=await sha1(pwd);const prefix=hash.slice(0,5);const suffix=hash.slice(5);const response=await fetch('https://api.pwnedpasswords.com/range/'+prefix,{headers:{'Add-Padding':'true'}});const text=await response.text();const match=text.split('\n').find(l=>l.startsWith(suffix));const count=match?parseInt(match.split(':')[1].trim()):0;load.classList.add('hidden');res.classList.remove('hidden');if(count>0){res.className='rounded-xl p-4 text-sm font-medium bg-red-900 border border-red-700 text-red-200';res.innerHTML='🚨 <strong>Compromised!</strong> Found in <strong>'+count.toLocaleString()+' breaches</strong>. Generate a new one immediately.';}else{res.className='rounded-xl p-4 text-sm font-medium bg-green-900 border border-green-700 text-green-200';res.innerHTML='✅ <strong>Good news!</strong> Not found in any known data breach. Always use unique passwords per site.';}}catch(err){load.classList.add('hidden');res.classList.remove('hidden');res.className='rounded-xl p-4 text-sm font-medium bg-yellow-900 border border-yellow-700 text-yellow-300';res.innerHTML='⚠️ Could not reach breach database. Check your connection and try again.';}btn.disabled=false;}
-    window.onload=generatePassword;</script>
+    <script src="script.js"></script>
 </body>
 </html>
